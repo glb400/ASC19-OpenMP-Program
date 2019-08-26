@@ -8,8 +8,6 @@
 | &nbsp;openMP&nbsp; | &nbsp;parallel-program&nbsp; | 
 | :---: | :----: |
 
-并行计算代码，asc相关
-
 ## asc选拔赛
 
 - [系统组题目](https://github.com/glb400/parallel-programming/tree/master/1-系统组)
