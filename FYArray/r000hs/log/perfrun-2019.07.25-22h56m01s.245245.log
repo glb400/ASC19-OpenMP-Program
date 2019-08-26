@@ -1,0 +1,1593 @@
+26 [140447563794240] TRACE perfrun.launcher <> - ENTER: int main(int, char **)
+33 [140447563794240] TRACE perfrun.launcher <> - ENTER: Start the collection
+34 [140447563794240] INFO perfrun.launcher <> - argc = 7; cmdline = /opt/intel/vtune_amplifier_2018.1.0.535340/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 5 --option-file /home/u17343031/FYArray/r000hs/config/runss.options 
+34 [140447563794240] TRACE perfrun.launcher <> - ENTER: Initialize the launcher
+44 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::CmdLineParser::declareOptions()
+77 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::CmdLineParser::declareOptions()
+78 [140447563794240] TRACE perfrun.system <> - ENTER: static runtool::system::IController *runtool::system::IController::create()
+79 [140447563794240] TRACE perfrun.system <> - ENTER: runtool::system::Controller::Controller()
+79 [140447563794240] TRACE perfrun.system <> - EXIT:  runtool::system::Controller::Controller()
+79 [140447563794240] TRACE perfrun.system <> - EXIT:  static runtool::system::IController *runtool::system::IController::create()
+79 [140447563794240] INFO perfrun.launcher <> - plugin system has been added successfully
+79 [140447563794240] TRACE perfrun.itt <> - ENTER: static runtool::sdk::IController *runtool::itt::IController::create()
+79 [140447563794240] TRACE perfrun.itt <> - ENTER: create itt controller
+79 [140447563794240] TRACE perfrun.itt <> - EXIT:  create itt controller
+79 [140447563794240] TRACE perfrun.itt <> - EXIT:  static runtool::sdk::IController *runtool::itt::IController::create()
+79 [140447563794240] INFO perfrun.launcher <> - plugin itt has been added successfully
+80 [140447563794240] INFO perfrun.launcher <> - plugin ptracecollector has been added successfully
+80 [140447563794240] TRACE perfrun.gpu <> - ENTER: runtool::gpu::Controller::Controller()
+80 [140447563794240] TRACE perfrun.gpu <> - EXIT:  runtool::gpu::Controller::Controller()
+80 [140447563794240] INFO perfrun.launcher <> - plugin gpu has been added successfully
+80 [140447563794240] INFO perfrun.launcher <> - plugin  has been added successfully
+80 [140447563794240] INFO perfrun.launcher <> - plugin  has been added successfully
+80 [140447563794240] INFO perfrun.launcher <> - plugin  has been added successfully
+80 [140447563794240] INFO perfrun.launcher <> - plugin mrte has been added successfully
+80 [140447563794240] TRACE perfrun.emon <> - ENTER: runtool::emon::Controller::Controller()
+80 [140447563794240] TRACE perfrun.emon <> - EXIT:  runtool::emon::Controller::Controller()
+80 [140447563794240] INFO perfrun.launcher <> - plugin emon has been added successfully
+82 [140447563794240] TRACE perfrun.stdsrc <> - ENTER: void runtool::stdsrc::Controller::fillCommandLineOptions()
+82 [140447563794240] TRACE perfrun.stdsrc <> - EXIT:  void runtool::stdsrc::Controller::fillCommandLineOptions()
+82 [140447563794240] DEBUG perfrun.stdsrc <> - stdsrc controller object has been created
+82 [140447563794240] INFO perfrun.launcher <> - plugin stdsrc has been added successfully
+83 [140447563794240] DEBUG perfrun.sep <> - SEP controller object has been created
+83 [140447563794240] INFO perfrun.launcher <> - plugin sep has been added successfully
+83 [140447563794240] DEBUG perfrun.vtsspp <> - VTSS++ controller object has been created
+83 [140447563794240] INFO perfrun.launcher <> - plugin vtsspp has been added successfully
+83 [140447563794240] TRACE perfrun.perfcollector <> - ENTER: runtool::perfcollector::Controller::Controller()
+84 [140447563794240] INFO perfrun.sdk <> - Reading value (1) from file: /proc/sys/kernel/perf_event_paranoid
+169 [140447563794240] INFO perfrun.perfcollector <> - cpu: family = 6 model = 87
+169 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/cpu
+170 [140447563794240] INFO perfrun.perfcollector <> - format: pc config:19 mask:19
+170 [140447563794240] INFO perfrun.perfcollector <> - format: any config:21 mask:21
+170 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+170 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+170 [140447563794240] INFO perfrun.perfcollector <> - format: cmask config:24-31 mask:24-31
+170 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+171 [140447563794240] INFO perfrun.perfcollector <> - format: in_tx config:32 mask:32
+171 [140447563794240] INFO perfrun.perfcollector <> - format: ldlat config1:0-15 mask:0-15
+171 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+171 [140447563794240] INFO perfrun.perfcollector <> - format: in_tx_cp config:33 mask:33
+171 [140447563794240] INFO perfrun.perfcollector <> - format: offcore_rsp config1:0-63 mask:0-63
+171 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_CPU_PMU_DETAILS
+171 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : cpu , id : 0
+171 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_0
+172 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+172 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+172 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+172 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+172 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+172 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+172 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 0
+172 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_1
+173 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+173 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+173 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+173 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+173 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+173 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+173 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 1
+174 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_2
+174 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+174 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+174 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+174 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+174 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+174 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+174 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 2
+174 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_3
+175 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+175 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+175 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+175 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+175 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+175 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+175 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 3
+175 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_4
+176 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+176 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+176 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+176 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+176 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+176 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+176 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 4
+176 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_5
+176 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+177 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+177 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+177 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+177 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+177 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+177 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 5
+177 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_6
+178 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+178 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+178 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+178 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+178 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+178 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+178 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 6
+178 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_uclk_7
+178 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+179 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+179 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+179 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+179 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+179 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_UCLK_PMU_DETAILS
+179 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_uclk , id : 7
+179 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/software
+179 [140447563794240] WARN perfrun.perfcollector <> - format subdir doesn't exist, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:597
+179 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+179 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : software , id : 0
+179 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_uclk_0
+180 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+180 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+180 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+180 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+180 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+180 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_UCLK_PMU_DETAILS
+180 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc_uclk , id : 0
+180 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_uclk_1
+181 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+181 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+181 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+181 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+181 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+181 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_UCLK_PMU_DETAILS
+181 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc_uclk , id : 1
+181 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/power
+182 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+182 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+182 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : power , id : 0
+182 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_irp
+182 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+182 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+182 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+182 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+183 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+183 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+184 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+184 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_irp , id : 0
+184 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_pcu
+184 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+184 [140447563794240] INFO perfrun.perfcollector <> - format: occ_invert config:30 mask:30
+184 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+185 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-6 mask:0-6
+185 [140447563794240] INFO perfrun.perfcollector <> - format: use_occ_ctr config:7 mask:7
+185 [140447563794240] INFO perfrun.perfcollector <> - format: occ_sel config:14-15 mask:14-15
+185 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+185 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-29 mask:24-29
+185 [140447563794240] INFO perfrun.perfcollector <> - format: occ_edge_det config:31 mask:31
+185 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+186 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_pcu , id : 0
+186 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/tracepoint
+186 [140447563794240] WARN perfrun.perfcollector <> - format subdir doesn't exist, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:597
+186 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+186 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : tracepoint , id : 0
+186 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_0
+186 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+186 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+186 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+186 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+187 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+187 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+188 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+188 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+188 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+188 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+188 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+188 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 0
+188 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_1
+188 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+188 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+189 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+189 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+189 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+189 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+189 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+189 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+189 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+190 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+190 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+190 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+190 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+190 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+190 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+190 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+190 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+191 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 1
+191 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_2
+191 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+191 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+191 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+191 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+191 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+191 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+191 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+192 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+192 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+192 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+192 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+192 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+192 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+192 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+192 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+193 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+193 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+193 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 2
+193 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_3
+193 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+193 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+193 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+194 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+194 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+194 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+194 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+194 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+194 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+194 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+195 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+195 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+195 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+195 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+195 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+195 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+195 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+195 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 3
+195 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_4
+196 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+196 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+196 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+196 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+196 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+196 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+196 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+197 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+197 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+197 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+197 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+197 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+197 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+197 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+197 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+198 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+198 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+198 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 4
+198 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_5
+198 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+198 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+198 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+199 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+199 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+199 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+199 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+199 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+199 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+199 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+200 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+200 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+200 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+200 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+200 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+200 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+200 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+200 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 5
+200 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_6
+201 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+201 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+201 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+201 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+201 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+201 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+201 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+202 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+202 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+202 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+203 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+203 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 6
+203 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_7
+203 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+203 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+203 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+203 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+204 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+204 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+205 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+205 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+205 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+205 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+205 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+205 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 7
+205 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_8
+205 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+206 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+206 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+206 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+206 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+206 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+206 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+206 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+206 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+207 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+207 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+207 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+207 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+207 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+207 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+207 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+207 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+208 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 8
+208 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_9
+208 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+208 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+208 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+208 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+208 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+208 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+209 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+209 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+209 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+209 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+209 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+209 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+209 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+209 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+210 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+210 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+210 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+210 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 9
+210 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_0
+210 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+210 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+211 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+211 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+211 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+211 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_DCLK_PMU_DETAILS
+211 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc , id : 0
+211 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_1
+211 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+211 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+211 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+212 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+212 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+212 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_DCLK_PMU_DETAILS
+212 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc , id : 1
+212 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_2
+212 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+212 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+212 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+213 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+213 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+213 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_DCLK_PMU_DETAILS
+213 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc , id : 2
+213 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_3
+213 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+213 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+213 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+213 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+214 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+214 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_DCLK_PMU_DETAILS
+214 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc , id : 3
+214 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_4
+214 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+214 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+214 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+214 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+215 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+215 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_DCLK_PMU_DETAILS
+215 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc , id : 4
+215 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_imc_5
+215 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+215 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+215 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+215 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+215 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+216 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_IMC_DCLK_PMU_DETAILS
+216 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_imc , id : 5
+216 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_10
+216 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+216 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+216 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+216 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+216 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+217 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+218 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+218 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+218 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+218 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+218 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+218 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 10
+218 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_11
+218 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+219 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+219 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+219 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+219 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+219 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+219 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+219 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+219 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+220 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+220 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+220 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+220 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+220 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+220 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+220 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+220 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+220 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 11
+221 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_12
+221 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+221 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+221 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+221 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+221 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+221 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+222 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+222 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+222 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+222 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+222 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+222 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+222 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+222 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+223 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+223 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+223 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+223 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 12
+223 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_13
+223 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+223 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+223 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+224 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+224 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+224 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+224 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+224 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+224 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+224 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+224 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+225 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+225 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+225 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+225 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+225 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+225 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+225 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 13
+225 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_14
+226 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+226 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+226 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+226 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+226 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+226 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+226 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+226 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+227 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+227 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+227 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+227 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+227 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+227 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+227 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+227 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+227 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+228 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 14
+228 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_15
+228 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+228 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+228 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+228 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+228 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+229 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+229 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+230 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+230 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+230 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+230 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+230 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 15
+230 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_16
+230 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+230 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+231 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+231 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+231 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+231 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+231 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+231 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+231 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+231 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+232 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+232 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+232 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+232 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+232 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+232 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+232 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+232 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 16
+232 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_17
+233 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+233 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+233 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+233 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+233 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+233 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+233 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+234 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+234 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+234 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+234 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+234 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+234 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+234 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+234 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+235 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+235 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+235 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 17
+235 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_18
+235 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+235 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+235 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+235 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+236 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+236 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+237 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+237 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+237 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+237 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+237 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+237 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 18
+237 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_19
+237 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+238 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+238 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+238 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+238 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+238 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+238 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+238 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+238 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+239 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+239 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+239 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+239 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+239 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+239 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+239 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+239 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+240 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 19
+240 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_20
+240 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+240 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+240 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+240 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+240 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+240 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+241 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+241 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+241 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+241 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+241 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+241 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+241 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+241 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+242 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+242 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+242 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+242 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 20
+242 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_21
+242 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+242 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+242 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+243 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+243 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+243 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+243 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+243 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+243 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+243 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+243 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+244 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+244 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+244 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+244 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+244 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+244 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+244 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 21
+244 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_22
+244 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+245 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+245 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+245 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+245 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+245 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+245 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+245 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+246 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+246 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+246 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+246 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+246 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+246 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+246 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+246 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+247 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+247 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 22
+247 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_23
+247 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+247 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+247 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+247 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+247 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+248 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+248 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+249 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+249 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+249 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+249 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+249 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 23
+249 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_24
+249 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+249 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+250 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+250 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+250 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+250 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+250 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+250 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+250 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+250 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+251 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+251 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+251 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+251 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+251 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+251 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+251 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+251 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 24
+251 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_25
+252 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+252 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+252 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+252 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+252 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+252 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+252 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+253 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+253 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+253 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+253 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+253 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+253 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+253 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+253 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+254 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+254 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+254 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 25
+254 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_26
+254 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+254 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+254 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+254 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+255 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+255 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+256 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+256 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+256 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+256 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+256 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+256 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 26
+256 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_27
+256 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+257 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+257 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+257 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+257 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+257 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+257 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+257 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+258 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+258 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+258 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+258 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+258 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+258 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+258 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+258 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+258 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+259 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 27
+259 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_28
+259 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+259 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+259 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+259 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+259 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+260 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+260 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+261 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+261 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+261 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+261 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+261 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 28
+261 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_29
+261 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+261 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+262 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+262 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+262 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+262 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+262 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+262 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+262 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+262 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+263 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+263 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+263 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+263 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+263 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+263 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+263 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+263 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 29
+263 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_30
+264 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+264 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+264 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+264 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+264 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+264 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+264 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+265 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+265 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+265 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+265 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+265 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+265 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+265 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+265 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+266 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+266 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+266 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 30
+266 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_31
+266 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+266 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+266 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+266 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+267 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+267 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+268 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+268 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+268 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+268 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+268 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+268 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 31
+268 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_32
+268 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+268 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+269 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+269 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+269 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+269 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+269 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+269 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+269 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+270 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+270 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+270 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+270 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+270 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+270 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+270 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+270 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+271 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 32
+271 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_33
+271 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+271 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+271 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+271 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+271 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+271 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+271 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+272 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+272 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+272 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+272 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+272 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+272 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+272 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+273 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+273 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+273 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+273 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 33
+273 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_34
+273 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+273 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+274 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+274 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+274 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+274 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+274 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+274 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+274 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+274 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+275 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+275 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+275 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+275 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+275 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+275 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+275 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+276 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 34
+276 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_35
+276 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+276 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+276 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+276 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+276 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+276 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+277 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+277 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+277 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+277 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+277 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+277 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+277 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+278 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+278 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+278 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+278 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+278 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 35
+278 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_36
+278 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+279 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+279 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+279 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+279 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+279 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+279 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+279 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+279 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+280 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+280 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+280 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+280 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+280 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+280 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+280 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+280 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+281 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 36
+281 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_cha_37
+281 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+281 [140447563794240] INFO perfrun.perfcollector <> - format: qor config:16 mask:16
+281 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+281 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+281 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nc config1:62 mask:62
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_isoc config1:63 mask:63
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_link config1:12 mask:12
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_nnm config1:37 mask:37
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_opc config1:41-60 mask:41-60
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_tid config1:0-8 mask:0-8
+282 [140447563794240] INFO perfrun.perfcollector <> - format: filter_all_op config1:35 mask:35
+282 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+283 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+283 [140447563794240] INFO perfrun.perfcollector <> - format: filter_local config1:33 mask:33
+283 [140447563794240] INFO perfrun.perfcollector <> - format: filter_state config1:18-20 mask:18-20
+283 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+283 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_cha , id : 37
+283 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_m2pcie
+283 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+283 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+284 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+284 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+284 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+284 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+284 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_m2pcie , id : 0
+284 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_0
+284 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+284 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+285 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+285 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+285 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+285 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+285 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 0
+285 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_1
+285 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+285 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+286 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+286 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+286 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+286 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+286 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 1
+286 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_2
+286 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+286 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+286 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+287 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+287 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+287 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+287 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 2
+287 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_3
+287 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+287 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+287 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+288 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+288 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+288 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+288 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 3
+288 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_4
+288 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+288 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+288 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+289 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+289 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+289 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+289 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 4
+289 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_5
+289 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+289 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+289 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+289 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+290 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+290 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+290 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 5
+290 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_6
+290 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+290 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+290 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+290 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+290 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+291 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+291 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 6
+291 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_edc_eclk_7
+291 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+291 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+291 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+291 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+291 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-31 mask:24-31
+291 [140447563794240] INFO perfrun.perfcollector <> - hwInfo : PERF_EDC_ECLK_PMU_DETAILS
+292 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_edc_eclk , id : 7
+292 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/intel_bts
+292 [140447563794240] WARN perfrun.perfcollector <> - format subdir doesn't exist, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:597
+292 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+292 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : intel_bts , id : 0
+292 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/breakpoint
+292 [140447563794240] WARN perfrun.perfcollector <> - format subdir doesn't exist, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:597
+292 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+292 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : breakpoint , id : 0
+292 [140447563794240] INFO perfrun.perfcollector <> - dir found : /sys/bus/event_source/devices/uncore_ubox
+293 [140447563794240] INFO perfrun.perfcollector <> - format: inv config:23 mask:23
+293 [140447563794240] INFO perfrun.perfcollector <> - format: edge config:18 mask:18
+293 [140447563794240] INFO perfrun.perfcollector <> - format: event config:0-7 mask:0-7
+293 [140447563794240] INFO perfrun.perfcollector <> - format: umask config:8-15 mask:8-15
+293 [140447563794240] INFO perfrun.perfcollector <> - format: tid_en config:19 mask:19
+293 [140447563794240] INFO perfrun.perfcollector <> - format: thresh config:24-28 mask:24-28
+293 [140447563794240] WARN perfrun.perfcollector <> - pmu hwInfo is not set, at file: vcs/perfrun1/plugins/perfcollector/src/controller.cpp:666
+293 [140447563794240] INFO perfrun.perfcollector <> - pmu added : family : uncore_ubox , id : 0
+294 [140447563794240] TRACE perfrun.perfcollector <> - EXIT:  runtool::perfcollector::Controller::Controller()
+294 [140447563794240] INFO perfrun.launcher <> - plugin perf has been added successfully
+294 [140447563794240] TRACE perfrun.tpss <> - ENTER: static runtool::sdk::IController *runtool::tpss::IController::create()
+294 [140447563794240] TRACE perfrun.tpss <> - ENTER: create tpss controller
+295 [140447563794240] TRACE perfrun.tpss <> - EXIT:  create tpss controller
+295 [140447563794240] TRACE perfrun.tpss <> - EXIT:  static runtool::sdk::IController *runtool::tpss::IController::create()
+295 [140447563794240] INFO perfrun.launcher <> - plugin tpss has been added successfully
+295 [140447563794240] DEBUG perfrun.cuscol <> - cuscol controller object has been created
+295 [140447563794240] INFO perfrun.launcher <> - plugin cuscol has been added successfully
+295 [140447563794240] DEBUG perfrun.exprof <> - exprof controller object has been created
+295 [140447563794240] DEBUG perfrun.exprof <> - exprof controller filling command line options
+295 [140447563794240] INFO perfrun.launcher <> - plugin exprof has been added successfully
+295 [140447563794240] DEBUG perfrun.dpdk <> - dpdk controller object has been created
+296 [140447563794240] INFO perfrun.launcher <> - plugin dpdk has been added successfully
+296 [140447563794240] TRACE perfrun.media <> - ENTER: static runtool::media::IController *runtool::media::IController::create()
+296 [140447563794240] TRACE perfrun.media <> - ENTER: runtool::media::Controller::Controller()
+296 [140447563794240] TRACE perfrun.media <> - EXIT:  runtool::media::Controller::Controller()
+296 [140447563794240] TRACE perfrun.media <> - EXIT:  static runtool::media::IController *runtool::media::IController::create()
+296 [140447563794240] INFO perfrun.launcher <> - plugin media has been added successfully
+296 [140447563794240] DEBUG perfrun.commcollector <> - comm controller object has been created
+296 [140447563794240] INFO perfrun.launcher <> - plugin commcollector has been added successfully
+296 [140447563794240] DEBUG perfrun.cvecollector <> - CVE controller object has been created
+296 [140447563794240] INFO perfrun.launcher <> - plugin cve has been added successfully
+299 [140447563794240] INFO perfrun.launcher <> - the option was added --interval: Specify an interval of data collection (for example, sampling) in milliseconds.
+299 [140447563794240] INFO perfrun.launcher <> - the option was added --follow-child: Profile process with or without children.
+300 [140447563794240] INFO perfrun.launcher <> - the option was added --gelding: BADMSG: perfrun1.launcher.plugin_manager::gelding
+300 [140447563794240] INFO perfrun.launcher <> - the option was added --time-source: Specify time source for measurement. Possible values: sys - wall clock time; tsc - time stamp counter; ext - time from an external source; auto - auto select accurate time source.
+301 [140447563794240] INFO perfrun.launcher <> - the option was added --stack: Enable or disable collection of stacks.
+301 [140447563794240] INFO perfrun.launcher <> - the option was added --stack-stitching: Enable or disable the stack stitching algorithm for Intel TBB-based applications.
+302 [140447563794240] INFO perfrun.launcher <> - the option was added --type: Specify type of data to be collected. For example, --type cpu:counters,waiting:nostack,io.
+303 [140447563794240] INFO perfrun.launcher <> - the option was added --mrte-mode: Specify Java/.NET/other managed runtime collection mode. Possible values: native - collect information only for native code; managed - collect information only for managed code; mixed - collect information for both managed and native code; auto - choose the mode based on binary type.
+304 [140447563794240] INFO perfrun.launcher <> - the option was added --mrte-mode-list: List supported Java/.NET/other managed runtime collection modes.
+305 [140447563794240] INFO perfrun.launcher <> - the option was added --mrte-type: Specify which managed runtimes to collect. Possible values: java - collect information for Java; dotnet - collect information for .NET; python - collect information for CPython. You can specify several values separated by comma.
+306 [140447563794240] INFO perfrun.launcher <> - the option was added --mrte-type-list: List supported Java/.NET/other managed runtime types.
+307 [140447563794240] INFO perfrun.launcher <> - the option was added --trace-strategy: Specify how to profile a process tree. <string> can be "<process>:trace:notrace" - profile the process but do not profile its children. Shorthand parameters: t - trace, nt - notrace. For example, "vtunedemo.exe:t:t".
+308 [140447563794240] INFO perfrun.launcher <> - the option was added --collector: BADMSG: perfrun1.launcher.plugin_manager::collector
+309 [140447563794240] INFO perfrun.launcher <> - the option was added --system-wide: Enable system-wide profiling. This mode may require additional permissions.
+310 [140447563794240] INFO perfrun.launcher <> - the option was added --kvm-guest: Enable KVM guest OS profiling.
+311 [140447563794240] INFO perfrun.launcher <> - the option was added --kvm-guest-kallsyms: Specify a local path to the /proc/kallsyms file copied from the guest OS for proper symbol resolution.
+312 [140447563794240] INFO perfrun.launcher <> - the option was added --kvm-guest-modules: Specify a local path to the /proc/modules file copied from the guest OS for proper symbol resolution.
+313 [140447563794240] INFO perfrun.launcher <> - the option was added --dump-vdso: Dump [vdso] to result directory
+314 [140447563794240] INFO perfrun.launcher <> - the option was added --bandwidth-limits: Measure bandwidth limits
+315 [140447563794240] INFO perfrun.launcher <> - the option was added --bandwidth-strategy: Bandwidth limits determination specific properties (example: --bandwidth-strategy array-size=0,duration=500).
+316 [140447563794240] INFO perfrun.launcher <> - the option was added --bandwidth-config: List of benchmarks to run.
+317 [140447563794240] INFO perfrun.launcher <> - the option was added --system-collector-config: Specify subcollectors. Possible values: all, vdso, container, device-info, none.
+318 [140447563794240] INFO perfrun.launcher <> - the option was added --itt-config: Specify a sub-set of ITT API to collect.
+319 [140447563794240] INFO perfrun.launcher <> - the option was added --itt-debug: Set pseudo-breakpoint at ITT API collector's start to enable the debugger to attach early.
+320 [140447563794240] INFO perfrun.launcher <> - the option was added --itt-ring-buffer-multiplier: The size of internal ITT API collector ring buffer, in bytes per second
+321 [140447563794240] INFO perfrun.launcher <> - the option was added --ptrace: Ptrace collector.
+322 [140447563794240] INFO perfrun.launcher <> - the option was added --target-pid: BADMSG: perfrun1.ptracecollector::target-pid
+323 [140447563794240] INFO perfrun.launcher <> - the option was added --ptrace-server-pid: BADMSG: perfrun1.ptracecollector::ptrace-server-pid
+324 [140447563794240] INFO perfrun.launcher <> - the option was added --ptrace-trace: BADMSG: perfrun1.ptracecollector::ptrace-trace
+325 [140447563794240] INFO perfrun.launcher <> - the option was added --ptrace-time-source: BADMSG: perfrun1.ptracecollector::ptrace-time-source
+325 [140447563794240] INFO perfrun.launcher <> - the option was added --ptrace-start-type: BADMSG: perfrun1.ptracecollector::ptrace-start-type
+326 [140447563794240] INFO perfrun.launcher <> - the option was added --gpu-config: Specify types of GPU data to be collected. Possible values: preset1, preset2.
+327 [140447563794240] INFO perfrun.launcher <> - the option was added --gpu-debug: Enable self-testing of the GPGPU profiling collector.
+328 [140447563794240] INFO perfrun.launcher <> - the option was added --stdsrc-config: Specify Standard Sources category tag(s).
+329 [140447563794240] INFO perfrun.launcher <> - the option was added --ftrace-config-list: List Linux Ftrace category tag(s).
+330 [140447563794240] INFO perfrun.launcher <> - the option was added --ftrace-config: Specify Linux Ftrace category tag(s).
+331 [140447563794240] INFO perfrun.launcher <> - the option was added --ftrace-function-groups: Enable tracing of specific groups of functions.
+331 [140447563794240] INFO perfrun.launcher <> - the option was added --event-info: BADMSG: perfrun1.stdsrc::event-info
+332 [140447563794240] INFO perfrun.launcher <> - the option was added --cpu-list: List supported CPUs.
+333 [140447563794240] INFO perfrun.launcher <> - the option was added --target-list: List available targets for performing sampling collection.
+334 [140447563794240] INFO perfrun.launcher <> - the option was added --event-value-list: Display event information.
+335 [140447563794240] INFO perfrun.launcher <> - the option was added --platform-value-list: Display details of supported platforms.
+335 [140447563794240] INFO perfrun.launcher <> - the option was added --uncore-event-list: List uncore events for which a sampling data collection can be performed on this platform.
+336 [140447563794240] INFO perfrun.launcher <> - the option was added --modifier-list: Specify the event name <string> for which the modifiers list is requested.
+337 [140447563794240] INFO perfrun.launcher <> - the option was added --pmu-list: List supported PMUs.
+338 [140447563794240] INFO perfrun.launcher <> - the option was added --os-mode-only: Enable sampling data collection for OS-mode processes only.
+339 [140447563794240] INFO perfrun.launcher <> - the option was added --user-mode-only: Enable sampling data collection for user-mode processes only.
+340 [140447563794240] INFO perfrun.launcher <> - the option was added --target: Specify target for the sampling data collection. All other command line options are applied to the value specified for this option.
+341 [140447563794240] INFO perfrun.launcher <> - the option was added --event-config: Perform data collection for the events with <string> configured using the format <event name1>":modifier1=val:modifier2=val/constraint1={:modifier3=val:modifier4=val}...,"<event name2>":... Specify the events(s) to monitor and embed the event names within double quotes("). [:modifier=val] specifies individual event modifiers along with the respective values for a given platform. Note that the modifiers can be generic to an event as well as specific to a constraint (or an event qualifier). The constraint specific special modifiers appear after [/constraint=]. The modifiers can be in decimal or hexadecimal format. Only specific modifiers accept the value as a string. Each event specification is delimited by a comma (,). For a list of supported modifiers and constraints, refer to the documentation.
+341 [140447563794240] INFO perfrun.launcher <> - the option was added --chipset-event-config: BADMSG: perfrun1.sep::chipset-event-config
+342 [140447563794240] INFO perfrun.launcher <> - the option was added --uncore-event-config: Perform uncore data collection in ebc count mode for the events with <string> configured using the format "<event name1>"...,"<event name2>":... Specify the events(s) to monitor and embed the event names within double quotes(").
+343 [140447563794240] INFO perfrun.launcher <> - the option was added --count-emon: Enable counting mode and output the data in EMON format.
+344 [140447563794240] INFO perfrun.launcher <> - the option was added --event-based-counts: Enable event-based counting mode. During sampling data collection, event counts data is collected for the list of events specified in -event-config option.
+344 [140447563794240] INFO perfrun.launcher <> - the option was added --event-mux-tfactor: Specify the event multiplexing tfactor as <integer> to set the length of the interval between interrupts. The larger the tfactor value, the larger the period between interrupts. Currently this option is only available on Intel platforms codenamed Knights Corner.
+345 [140447563794240] INFO perfrun.launcher <> - the option was added --full-pebs-capture: Capture full pebs information.
+346 [140447563794240] INFO perfrun.launcher <> - the option was added --last-branch-records: Capture Last Branch Records information.
+347 [140447563794240] INFO perfrun.launcher <> - the option was added --pmu-type: Specify the targeted PMU name as <string>.
+348 [140447563794240] INFO perfrun.launcher <> - the option was added --platform-type: Specify the targeted platform number as <number>.
+348 [140447563794240] INFO perfrun.launcher <> - the option was added --bts-count: Specify the <integer> number of BTS records collected after each sample or context switch (VTSS++ only).
+349 [140447563794240] INFO perfrun.launcher <> - the option was added --cpu-mask: Specify which CPU(s) <string> to collect data on. For example, specify "2-8,10,12-14" to sample only CPUs 2 through 8, 10, and 12 through 14.
+350 [140447563794240] INFO perfrun.launcher <> - the option was added --event-mux-alg: Specify the event multiplexing algorithm. Possible values: sequence, timer, trigger.
+350 [140447563794240] INFO perfrun.launcher <> - the option was added --event-mux-timeslice: Specify the event multiplexing time slice value as <integer>. The time slice specifies the duration between cycles for each event multiplexing group. The default value is 50 milliseconds. This option is valid only for timer-based event multiplexing. Specify the event multiplexing time slice value as <integer>. The time slice specifies the duration between cycles for each event multiplexing group. The default value is 1 millisecond. This option is valid only for timer-based event multiplexing.
+351 [140447563794240] INFO perfrun.launcher <> - the option was added --event-mux-factor: Specify the event multiplexing factor as <integer>. It controls the switching of event multiplexing groups. The default factor is 50. This option is valid only for trigger-based event multiplexing. Specify the event multiplexing factor as <integer>. It controls the switching of event multiplexing groups. The default factor is 1. This option is valid only for trigger-based event multiplexing.
+352 [140447563794240] INFO perfrun.launcher <> - the option was added --event-mux-trigger: Specify the name of the trigger event for event multiplexing as <string>. This option is valid only for trigger-based event multiplexing. The default trigger is CPU_CLK_UNHALTED.CORE (or CPU_CLK_UNHALTED.THREAD). BADMSG: perfrun1.vtsspp::event-mux-trigger
+353 [140447563794240] INFO perfrun.launcher <> - the option was added --pwr-config: BADMSG: perfrun1.vtsspp::pwr-config
+354 [140447563794240] INFO perfrun.launcher <> - the option was added --sys-config: BADMSG: perfrun1.vtsspp::sys-config
+354 [140447563794240] INFO perfrun.launcher <> - the option was added --pt-mode: BADMSG: perfrun1.vtsspp::pt-mode
+355 [140447563794240] INFO perfrun.launcher <> - the option was added --sample-after-multiplier: Specify the sample after multiplier as <double>. This multiplier modifies the sample after value for all the events specified in -event-config option. The values can range from 0.1 to 100.0. SAV multiplier value
+356 [140447563794240] INFO perfrun.launcher <> - the option was added --count: Enable counting mode. Enable counting mode
+356 [140447563794240] INFO perfrun.launcher <> - the option was added --trace-mpi: Configure collector to trace MPI code.
+357 [140447563794240] INFO perfrun.launcher <> - the option was added --raw-perf-config: Specify a verified configuration for the Perf collector in the format: <describer>,<content>. For example: map-events-file,<path_to_map_events_file>.
+358 [140447563794240] INFO perfrun.launcher <> - the option was added --stackwalk: Specify stack unwinding method. Possible values: online - unwind stacks during collection; offline - unwind stacks after collection is finished. Specify stack unwinding method. Possible value: lbr - unwind stacks during collection. Specify stack unwinding method. Possible values: online - unwind stacks during collection; offline - unwind stacks after collection is finished; lbr - enable LBR-based call stack collection. Specify stack unwinding method. Possible values: online - unwind stacks during collection; offline - unwind stacks after collection is finished. Specify stack unwinding method. Possible values: online - unwind stacks during collection; offline - unwind stacks after collection is finished.
+359 [140447563794240] INFO perfrun.launcher <> - the option was added --filter-include: Filter data during collection. Possible values: contended=<on|off> - filter out uncontended events; contended_nostack=<time> - filter out stacks for contended events that take less than <time> microseconds; wait=<time> - ignore transitions and blocks with wait time less than <time> microseconds; wait_nostack=<time> - filter out stacks for waits that take less than <time> microseconds.
+359 [140447563794240] INFO perfrun.launcher <> - the option was added --debug-pin: Debug PIN tool and runtime.
+360 [140447563794240] INFO perfrun.launcher <> - the option was added --debug-exception: Disallow the application to set own abnormal termination handler.
+361 [140447563794240] INFO perfrun.launcher <> - the option was added --trace-type: Specify the trace file granularity. Possible values: per-thread - per-thread trace file generation; per-process - per-process trace file generation.
+362 [140447563794240] INFO perfrun.launcher <> - the option was added --instrumentation-type: Specify type of instrumentation.
+363 [140447563794240] INFO perfrun.launcher <> - the option was added --altstack: Enable or disable usage of altstacks for profiling signal handlers.
+363 [140447563794240] INFO perfrun.launcher <> - the option was added --profiling-signal: BADMSG: perfrun1.ptracecollector::profiling-signal Alternate profiling signal.
+364 [140447563794240] INFO perfrun.launcher <> - the option was added --memory-strategy: Specify a minimal memory object size to be traced and a hash table size for faster objects search; for example: --memory-strategy obj-size-min=1024,hash-table-size=4096.
+365 [140447563794240] INFO perfrun.launcher <> - the option was added --gpu-profiling-config: Specify a type of deep GPU profiling applied for all kernels and a comma-separated list of GPU kernel names and invocations in the following format: profiling_type[@kernel_name[:start_idx:step:stop_idx]], where profiling_type is one of following: none, bblatency, memlatency; kernel_name is the name of GPU kernel; start_idx is the number of the first invocation; and stop_idx is the number of the last invocation to be profiled.
+366 [140447563794240] INFO perfrun.launcher <> - the option was added --custom-collector: Allows to provide arbitrary command line to be run on collection steps.
+366 [140447563794240] INFO perfrun.launcher <> - the option was added --exprof-com-list: List available COM ports.
+367 [140447563794240] INFO perfrun.launcher <> - the option was added --exprof-dvc-list: List available DvC IDs.
+368 [140447563794240] INFO perfrun.launcher <> - the option was added --exprof-trace-channel: BADMSG: perfrun1.exprof::exprof-trace-channel
+369 [140447563794240] INFO perfrun.launcher <> - the option was added --exprof-event-config: Specify ExactProfiling Event Classes.
+369 [140447563794240] INFO perfrun.launcher <> - the option was added --analyze-dpdk: analyze-dpdk
+370 [140447563794240] INFO perfrun.launcher <> - the option was added --network-sampling-interval: network-sampling-interval
+371 [140447563794240] INFO perfrun.launcher <> - the option was added --dpdk-file-prefix: dpdk-file-prefix
+372 [140447563794240] INFO perfrun.launcher <> - the option was added --target-system: BADMSG: perfrun1.launcher.plugin_manager::target-system
+372 [140447563794240] TRACE perfrun.launcher <> - Update configuration: tmp directory = /tmp/amplxe-tmp-u17343031
+372 [140447563794240] TRACE perfrun.launcher <> - EXIT:  Initialize the launcher
+376 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::CmdLineParser::parseOptionFile(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+383 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::CmdLineParser::parseOptionFile(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+383 [140447563794240] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+384 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::CmdLineParser::validateParseResult() const
+384 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::CmdLineParser::validateParseResult() const
+384 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::CmdLineParser::populate(runtool::IConfiguration *) const
+384 [140447563794240] TRACE perfrun.launcher <> - Update configuration: action = start
+384 [140447563794240] TRACE perfrun.launcher <> - Update configuration: collection type = launcher
+384 [140447563794240] TRACE perfrun.launcher <> - Update configuration: compression level = 2
+384 [140447563794240] TRACE perfrun.launcher <> - Update configuration: duration = 0 sec
+384 [140447563794240] TRACE perfrun.launcher <> - Update configuration: data limit = 524288000 bytes
+384 [140447563794240] TRACE perfrun.launcher <> - Update configuration: disc space limit = 0 bytes
+385 [140447563794240] TRACE perfrun.launcher <> - Update configuration: return-app-exitcode = false
+385 [140447563794240] TRACE perfrun.launcher <> - Update configuration: result directory = /home/u17343031/FYArray/r000hs
+385 [140447563794240] TRACE perfrun.launcher <> - Update configuration: application = ./FYArray.exe
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = interval; value = 20 !u32_t
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = follow-child; value = true !bool
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = gelding; value = false !bool
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = time-source; value = auto !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = stack; value = true !bool
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = stack-stitching; value = true !bool
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = type; value = cpu:counters:nostack !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = type; value = cpu:stack !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = mrte-mode; value = auto !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = mrte-type; value = java !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = mrte-type; value = python !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = collector; value = sep !ustring
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = system-wide; value = false !bool
+385 [140447563794240] TRACE perfrun.launcher <> - [IN] option = kvm-guest; value = false !bool
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = bandwidth-limits; value = false !bool
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = system-collector-config; value = all !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = itt-config; value = frame !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = itt-ring-buffer-multiplier; value = 10485760 !s32_t
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = pmu-type; value = core !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = stackwalk; value = offline !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = trace-type; value = per-thread !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = instrumentation-type; value = pin !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = altstack; value = true !bool
+386 [140447563794240] TRACE perfrun.launcher <> - [IN] option = gpu-profiling-config; value = none !ustring
+386 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::CmdLineParser::populate(runtool::IConfiguration *) const
+387 [140447452100352] TRACE perfrun.tpss <> - ENTER: void runtool::tpss::Controller::setMessageChannel(runtool::sdk::IMessageChannel *)
+387 [140447452100352] TRACE perfrun.tpss <> - EXIT:  void runtool::tpss::Controller::setMessageChannel(runtool::sdk::IMessageChannel *)
+387 [140447563794240] INFO perfrun.launcher <> - create file finder object
+387 [140447452100352] TRACE perfrun.itt <> - ENTER: void runtool::itt::Controller::setRequestHandler(runtool::sdk::IRequestHandler *)
+387 [140447452100352] TRACE perfrun.itt <> - EXIT:  void runtool::itt::Controller::setRequestHandler(runtool::sdk::IRequestHandler *)
+388 [140447452100352] TRACE perfrun.tpss <> - ENTER: void runtool::tpss::Controller::setRequestHandler(runtool::sdk::IRequestHandler *)
+388 [140447452100352] TRACE perfrun.tpss <> - EXIT:  void runtool::tpss::Controller::setRequestHandler(runtool::sdk::IRequestHandler *)
+388 [140447563794240] TRACE perfrun.launcher <> - Handle the user request: action = 0
+388 [140447563794240] TRACE perfrun.launcher <> - ENTER: int runtool::Launcher::doStart()
+388 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::Launcher::prepareLaunch()
+388 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::Launcher::prepareResultDirectory()
+388 [140447563794240] INFO perfrun.launcher <> - create a result directory: pattern = /home/u17343031/FYArray/r000hs pid = 4294967295
+393 [140447563794240] TRACE perfrun.sdk <> - ENTER: bool runtool::sdk::DirectoryInfo::isLocal() const
+393 [140447563794240] INFO perfrun.sdk <> - checked that the directory /home/u17343031/FYArray/r000hs is a local directory
+394 [140447563794240] INFO perfrun.sdk <> - the directory /home/u17343031/FYArray/r000hs is a local directory with FS type ID 1481003842
+394 [140447563794240] TRACE perfrun.sdk <> - EXIT:  bool runtool::sdk::DirectoryInfo::isLocal() const
+394 [140447563794240] TRACE perfrun.launcher <> - Update configuration: result directory = /home/u17343031/FYArray/r000hs
+395 [140447563794240] INFO perfrun.launcher <> - create data directory = /home/u17343031/FYArray/r000hs/data.0
+395 [140447563794240] TRACE perfrun.launcher <> - Update configuration: data directory = /home/u17343031/FYArray/r000hs/data.0
+395 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::Launcher::prepareResultDirectory()
+429 [140447563794240] TRACE perfrun.launcher <> - IMessenger: send collection state with state = 11
+430 [140447452100352] TRACE perfrun.launcher <> - Update configuration: follow child = 1
+528 [140447452100352] TRACE perfrun.launcher <> - Update configuration: time source = 1
+528 [140447452100352] TRACE perfrun.launcher <> - Update configuration: stack = 1
+528 [140447452100352] TRACE perfrun.launcher <> - Update configuration: gelding = 0
+528 [140447452100352] TRACE perfrun.launcher <> - Update configuration: stack stitching = 1
+528 [140447452100352] TRACE perfrun.system <> - ENTER: int runtool::system::Controller::initialize(runtool::sdk::IConfiguration *)
+528 [140447452100352] TRACE perfrun.system <> - ENTER: int runtool::system::TraceWriter::initialize(runtool::sdk::IConfiguration *, runtool::system::TraceWriter::Settings *)
+529 [140447452100352] TRACE perfrun.sdk <> - 0xc510802
+558 [140447452100352] TRACE perfrun.sdk <> - ENTER: runtool::sdk::TraceFile::TraceFile(tpss_tmu_creator *, unsigned int, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, bool)
+558 [140447452100352] INFO perfrun.sdk <> - Allocating TMU :/home/u17343031/FYArray/r000hs/data.0/systemcollector-245245-knl02.sc
+558 [140447452100352] TRACE perfrun.sdk <> - EXIT:  runtool::sdk::TraceFile::TraceFile(tpss_tmu_creator *, unsigned int, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, bool)
+558 [140447452100352] TRACE perfrun.system <> - EXIT:  int runtool::system::TraceWriter::initialize(runtool::sdk::IConfiguration *, runtool::system::TraceWriter::Settings *)
+558 [140447452100352] TRACE perfrun.system <> - ENTER: int runtool::system::ContainerMapping::initialize(runtool::sdk::IConfiguration *, runtool::system::TraceWriter *, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, boost::intrusive_ptr<runtool::sdk::IMessageChannel>, boost::intrusive_ptr<runtool::sdk::IMessageCatalog>)
+559 [140447452100352] TRACE perfrun.system <> - EXIT:  int runtool::system::ContainerMapping::initialize(runtool::sdk::IConfiguration *, runtool::system::TraceWriter *, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, boost::intrusive_ptr<runtool::sdk::IMessageChannel>, boost::intrusive_ptr<runtool::sdk::IMessageCatalog>)
+559 [140447452100352] TRACE perfrun.system <> - EXIT:  int runtool::system::Controller::initialize(runtool::sdk::IConfiguration *)
+559 [140447452100352] TRACE perfrun.itt <> - ENTER: int runtool::itt::Controller::initialize(runtool::sdk::IConfiguration *)
+560 [140447452100352] TRACE perfrun.itt <> - EXIT:  int runtool::itt::Controller::initialize(runtool::sdk::IConfiguration *)
+560 [140447452100352] INFO perfrun.launcher <> - plugin [ptracecollector] was disabled because it doesn't support the given collection type.
+560 [140447452100352] TRACE perfrun.gpu <> - ENTER: int runtool::gpu::Controller::initialize(runtool::sdk::IConfiguration *)
+560 [140447452100352] TRACE perfrun.gpu <> - EXIT:  int runtool::gpu::Controller::initialize(runtool::sdk::IConfiguration *)
+560 [140447452100352] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+560 [140447452100352] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+561 [140447452100352] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+561 [140447452100352] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+561 [140447452100352] TRACE perfrun.mrte <> - ENTER: int runtool::mrte::Controller::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] TRACE perfrun.mrte <> - EXIT:  int runtool::mrte::Controller::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] INFO perfrun.launcher <> - plugin [mrte] was disabled because it doesn't support the given collection type.
+561 [140447452100352] TRACE perfrun.emon <> - ENTER: int runtool::emon::Controller::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] TRACE perfrun.emon <> - EXIT:  int runtool::emon::Controller::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+561 [140447452100352] TRACE perfrun.stdsrc <> - ENTER: int runtool::stdsrc::Controller::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] TRACE perfrun.stdsrc <> - No request to enable stdsrc events
+561 [140447452100352] TRACE perfrun.stdsrc <> - EXIT:  int runtool::stdsrc::Controller::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+561 [140447452100352] TRACE perfrun.sep <> - ENTER: int runtool::sep::SdkController::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] DEBUG perfrun.sep <> - not supported parameter in stackwalk: offline
+561 [140447452100352] DEBUG perfrun.sep <> - enable event multiplexing
+561 [140447452100352] DEBUG perfrun.sep <> - collection isn't enabled
+561 [140447452100352] TRACE perfrun.sep <> - EXIT:  int runtool::sep::SdkController::initialize(runtool::sdk::IConfiguration *)
+561 [140447452100352] INFO perfrun.launcher <> - plugin [sep] was disabled because it doesn't support the given collection type.
+561 [140447452100352] TRACE perfrun.vtsspp <> - ENTER: int runtool::vtsspp::Controller::initialize(runtool::sdk::IConfiguration *)
+562 [140447452100352] DEBUG perfrun.vtsspp <> - It's not for VTSS++ collector
+562 [140447452100352] TRACE perfrun.vtsspp <> - EXIT:  int runtool::vtsspp::Controller::initialize(runtool::sdk::IConfiguration *)
+562 [140447452100352] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+562 [140447452100352] TRACE perfrun.perfcollector <> - ENTER: int runtool::perfcollector::Controller::initialize(runtool::sdk::IConfiguration *)
+562 [140447452100352] TRACE perfrun.perfcollector <> - EXIT:  int runtool::perfcollector::Controller::initialize(runtool::sdk::IConfiguration *)
+562 [140447452100352] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+562 [140447452100352] TRACE perfrun.tpss <> - ENTER: int runtool::tpss::Controller::initialize(runtool::sdk::IConfiguration *)
+563 [140447452100352] INFO perfrun.tpss <> - initialize tpss controller
+563 [140447452100352] TRACE perfrun.tpss <> - ENTER: bool runtool::tpss::Controller::configureCollectionMode(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+563 [140447452100352] INFO perfrun.tpss <> - configure collection mode: value = cpu:counters:nostack
+563 [140447452100352] TRACE perfrun.tpss <> - EXIT:  bool runtool::tpss::Controller::configureCollectionMode(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+563 [140447452100352] TRACE perfrun.tpss <> - ENTER: bool runtool::tpss::Controller::configureCollectionMode(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+563 [140447452100352] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+563 [140447452100352] TRACE perfrun.tpss <> - EXIT:  bool runtool::tpss::Controller::configureCollectionMode(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+563 [140447452100352] TRACE perfrun.tpss <> - ENTER: tpss::trace_file_t runtool::tpss::castTraceFileType(const gen_helpers2::variant_t &)
+563 [140447452100352] TRACE perfrun.tpss <> - EXIT:  tpss::trace_file_t runtool::tpss::castTraceFileType(const gen_helpers2::variant_t &)
+563 [140447452100352] INFO perfrun.tpss <> - default obj-size-min=1024
+563 [140447452100352] INFO perfrun.tpss <> - default hash-table-size=0
+976 [140447452100352] TRACE perfrun.tpss <> - EXIT:  int runtool::tpss::Controller::initialize(runtool::sdk::IConfiguration *)
+976 [140447452100352] TRACE perfrun.cuscol <> - ENTER: int runtool::cuscol::Controller::initialize(runtool::sdk::IConfiguration *)
+976 [140447452100352] TRACE perfrun.cuscol <> - No custom collections
+976 [140447452100352] TRACE perfrun.cuscol <> - EXIT:  int runtool::cuscol::Controller::initialize(runtool::sdk::IConfiguration *)
+976 [140447452100352] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+976 [140447452100352] TRACE perfrun.exprof <> - Missing target system for ExactProfiling
+976 [140447452100352] INFO perfrun.launcher <> - plugin [exprof] was disabled because it doesn't support the given collection type.
+976 [140447452100352] INFO perfrun.launcher <> - plugin [dpdk] was disabled because it doesn't support the given collection type.
+976 [140447452100352] TRACE perfrun.media <> - ENTER: int runtool::media::Controller::initialize(runtool::sdk::IConfiguration *)
+976 [140447452100352] DEBUG perfrun.media <> - Requested mode tracing mode for Media SDK: 0
+977 [140447452100352] DEBUG perfrun.media <> - Full path to .mfx_trace file: '/home/u17343031/.mfx_trace'
+977 [140447452100352] TRACE perfrun.media <> - EXIT:  int runtool::media::Controller::initialize(runtool::sdk::IConfiguration *)
+977 [140447452100352] TRACE perfrun.commcollector <> - ENTER: int runtool::commcollector::Controller::initialize(runtool::sdk::IConfiguration *)
+977 [140447452100352] INFO perfrun.commcollector <> - Disabling commcollector because remote-host is not specified
+977 [140447452100352] TRACE perfrun.commcollector <> - EXIT:  int runtool::commcollector::Controller::initialize(runtool::sdk::IConfiguration *)
+977 [140447452100352] INFO perfrun.launcher <> - plugin [commcollector] was disabled because it doesn't support the given collection type.
+977 [140447452100352] TRACE perfrun.cvecollector <> - ENTER: int runtool::cvecollector::Controller::initialize(runtool::sdk::IConfiguration *)
+977 [140447452100352] TRACE perfrun.cvecollector <> - EXIT:  int runtool::cvecollector::Controller::initialize(runtool::sdk::IConfiguration *)
+977 [140447452100352] INFO perfrun.launcher <> - plugin [cve] was disabled because it doesn't support the given collection type.
+977 [140447452100352] TRACE perfrun.cvecollector <> - ENTER: runtool::cvecollector::Controller::~Controller()
+977 [140447452100352] TRACE perfrun.cvecollector <> - EXIT:  runtool::cvecollector::Controller::~Controller()
+978 [140447563794240] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/vtune_amplifier_2018.1.0.535340/lib32/runtime:/opt/intel/vtune_amplifier_2018.1.0.535340/lib64/runtime:/opt/intel/itac/2018.1.017/intel64/slib:/opt/intel/compilers_and_libraries_2018.1.163/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2018.1.163/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2018.1.163/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2018.1.163/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2018.1.163/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2018.1.163/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2018.1.163/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2018.1.163/linux/tbb/lib/intel64/gcc4.7:/opt/intel/compilers_and_libraries_2018.1.163/linux/tbb/lib/intel64/gcc4.7:/opt/intel/debugger_2018/iga/lib:/opt/intel/debugger_2018/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2018.1.163/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2018.1.163/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+979 [140447563794240] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /opt/intel/vtune_amplifier_2018.1.0.535340/lib32/runtime/libittnotify_collector.so
+979 [140447563794240] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /opt/intel/vtune_amplifier_2018.1.0.535340/lib64/runtime/libittnotify_collector.so
+980 [140447563794240] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+981 [140447563794240] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /opt/intel/vtune_amplifier_2018.1.0.535340/lib32/runtime/libittnotify_collector.so
+982 [140447563794240] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /opt/intel/vtune_amplifier_2018.1.0.535340/lib64/runtime/libittnotify_collector.so
+982 [140447563794240] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = libittnotify_collector.so
+983 [140447563794240] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+984 [140447563794240] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+984 [140447563794240] INFO perfrun.launcher <> - set environment variable: __OCL_MIC_INTEL_LIBITTNOTIFY64 = /amplxe/results/libittnotify_collector.so
+985 [140447563794240] INFO perfrun.launcher <> - set environment variable: __OCL_MIC_INTEL_JIT_PROFILER64 = /amplxe/results/libittnotify_collector.so
+986 [140447563794240] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+986 [140447563794240] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer was created for IPC filename = /home/u17343031/FYArray/r000hs/runtool.245245.ipc
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup all handlers at once
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for ICancelRequest
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for IPauseRequest
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for IResumeRequest
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for IStopRequest
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for IStatusRequest
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for IDetachRequest
+987 [140447563794240] TRACE perfrun.launcher <> - RpcServer: setup a handler for IMarkRequest
+987 [140447563794240] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+988 [140447563794240] DEBUG perfrun.launcher <> - RpcServer: wrote information about the RPC server into the IPC file
+989 [140447563794240] TRACE perfrun.launcher <> - IMessenger: send collection state with state = 1
+989 [140446974080768] TRACE perfrun.launcher <> - ENTER: RpcServer: the main loop handles RPC requests  from clients
+990 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::Launcher::prepareLaunch()
+990 [140447563794240] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./FYArray.exe
+990 [140447452100352] TRACE perfrun.tpss <> - ENTER: void runtool::tpss::Controller::modifyCommandLine(std::basic_string<char, std::char_traits<char>, std::allocator<char>> &) const
+991 [140447452100352] TRACE perfrun.tpss <> - EXIT:  void runtool::tpss::Controller::modifyCommandLine(std::basic_string<char, std::char_traits<char>, std::allocator<char>> &) const
+991 [140447563794240] INFO perfrun.launcher <> - Launcher: command line to start after modification = /opt/intel/vtune_amplifier_2018.1.0.535340/bin64/pin -error_file /home/u17343031/FYArray/r000hs/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /opt/intel/vtune_amplifier_2018.1.0.535340/lib64/libtpsstool.so -t /opt/intel/vtune_amplifier_2018.1.0.535340/lib32/libtpsstool.so -server_name tpss_ipc.245245 -prd_dir /opt/intel/vtune_amplifier_2018.1.0.535340 -- ./FYArray.exe
+991 [140447563794240] INFO perfrun.launcher <> - ProcessCreator object was created
+992 [140447563794240] TRACE perfrun.launcher <> - ENTER: unsigned int runtool::ProcessCreator::start(bool)
+996 [140447563794240] TRACE perfrun.launcher <> - EXIT:  unsigned int runtool::ProcessCreator::start(bool)
+996 [140447563794240] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+997 [140447452100352] TRACE perfrun.system <> - ENTER: void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+997 [140447452100352] TRACE perfrun.system <> - EXIT:  void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+997 [140447452100352] TRACE perfrun.system <> - ENTER: bool runtool::system::Controller::start(unsigned int)
+1599 [140447452100352] INFO perfrun.system <> - Helper runtool '/opt/intel/vtune_amplifier_2018.1.0.535340/bin32/amplxe-runss -dump-vdso -r /home/u17343031/FYArray/r000hs --tmp-dir /tmp/amplxe-tmp-u17343031' returned 0
+2191 [140447452100352] INFO perfrun.system <> - Helper runtool '/opt/intel/vtune_amplifier_2018.1.0.535340/bin64/amplxe-runss -dump-vdso -r /home/u17343031/FYArray/r000hs --tmp-dir /tmp/amplxe-tmp-u17343031' returned 0
+2292 [140447452100352] TRACE perfrun.system <> - ENTER: bool runtool::system::getVideoAdapters(std::vector<runtool::system::gpu_adapter_t, std::allocator<runtool::system::gpu_adapter_t>> &)
+2293 [140447452100352] TRACE perfrun.system <> - EXIT:  bool runtool::system::getVideoAdapters(std::vector<runtool::system::gpu_adapter_t, std::allocator<runtool::system::gpu_adapter_t>> &)
+2293 [140447452100352] TRACE perfrun.sdk <> - ENTER: bool runtool::sdk::runSystemCmd(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::basic_string<char, std::char_traits<char>, std::allocator<char>> *, bool, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+2293 [140447452100352] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:423
+2294 [140447452100352] TRACE perfrun.sdk <> - EXIT:  bool runtool::sdk::runSystemCmd(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::basic_string<char, std::char_traits<char>, std::allocator<char>> *, bool, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &)
+2294 [140447452100352] TRACE perfrun.system <> - ENTER: bool runtool::system::ContainerMapping::start(unsigned int)
+2294 [140447452100352] TRACE perfrun.system <> - EXIT:  bool runtool::system::ContainerMapping::start(unsigned int)
+2294 [140447452100352] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:415
+2307 [140447452100352] TRACE perfrun.system <> - EXIT:  bool runtool::system::Controller::start(unsigned int)
+2307 [140447452100352] TRACE perfrun.itt <> - ENTER: bool runtool::itt::Controller::start(unsigned int)
+2307 [140447452100352] INFO perfrun.itt <> - start itt controller for pid #245250
+2308 [140447452100352] TRACE perfrun.itt <> - EXIT:  bool runtool::itt::Controller::start(unsigned int)
+2308 [140447452100352] TRACE perfrun.tpss <> - ENTER: bool runtool::tpss::Controller::start(unsigned int)
+2308 [140447452100352] INFO perfrun.tpss <> - start tpss controller for pid #245250
+2359 [140447452100352] TRACE perfrun.tpss <> - EXIT:  bool runtool::tpss::Controller::start(unsigned int)
+2360 [140447452100352] TRACE perfrun.media <> - ENTER: bool runtool::media::Controller::start(unsigned int)
+2360 [140447452100352] TRACE perfrun.media <> - EXIT:  bool runtool::media::Controller::start(unsigned int)
+2360 [140447452100352] TRACE perfrun.system <> - ENTER: void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+2360 [140447452100352] TRACE perfrun.system <> - EXIT:  void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+2360 [140447563794240] INFO perfrun.launcher <> - Launcher: all plugins were started
+2360 [140447563794240] INFO perfrun.launcher <> - DirectoryMonitor object was created
+2360 [140447563794240] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+2360 [140447563794240] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+2360 [140447563794240] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+2361 [140447563794240] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+2386 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::ProcessCreator::resume()
+2387 [140447563794240] DEBUG perfrun.launcher <> - ProcessCreator: the process with pid = 245250 is resumed
+2392 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::ProcessCreator::resume()
+2392 [140447563794240] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+2392 [140447563794240] TRACE perfrun.launcher <> - ENTER: int runtool::ProcessCreator::wait()
+3361 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+3361 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+3361 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+3363 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+3363 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+3363 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+3363 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+4363 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+4364 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+4364 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+4365 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+4365 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+4365 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+4365 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+5365 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+5365 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+5365 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+5367 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+5367 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+5367 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+5367 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+6367 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+6367 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+6367 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+6369 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+6369 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+6369 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+6369 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+7369 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+7369 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+7369 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+7370 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+7371 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+7371 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+7371 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+8371 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+8371 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+8371 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+8372 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+8373 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+8373 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+8373 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+9373 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+9373 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+9373 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+9374 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+9374 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+9374 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+9374 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+10375 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+10375 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+10375 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+10376 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+10376 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+10376 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+10376 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+11376 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+11377 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+11377 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+11378 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+11378 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+11378 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+11378 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+12378 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+12379 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+12379 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+12380 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+12380 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+12380 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+12380 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+13380 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+13380 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+13380 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+13382 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+13382 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 34530 bytes
+13382 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+13382 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+14382 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+14382 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+14382 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+14385 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+14385 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+14385 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+14385 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+15385 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+15386 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+15386 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+15388 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+15388 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+15388 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+15388 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+16389 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+16389 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+16389 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+16391 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+16391 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+16392 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+16392 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+17392 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+17392 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+17392 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+17394 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+17394 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+17395 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+17395 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+18395 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+18395 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+18395 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+18397 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+18398 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+18398 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+18398 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+19398 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+19398 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+19398 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+19400 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+19401 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+19401 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+19401 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+20401 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+20401 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+20401 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+20403 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+20404 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+20404 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+20404 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+21404 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+21404 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+21404 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+21406 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+21407 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+21407 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+21407 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+22407 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+22407 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+22407 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+22410 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+22410 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+22410 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+22410 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+23410 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+23411 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+23411 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+23413 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+23413 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+23413 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+23413 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+24414 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+24414 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+24414 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+24416 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+24416 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+24416 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+24416 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+25417 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+25417 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+25417 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+25419 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+25419 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+25420 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+25420 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+26420 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+26420 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+26420 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+26422 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+26423 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+26423 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+26423 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+27423 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+27423 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+27423 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+27425 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+27426 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+27426 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+27426 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+28426 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+28426 [140446948902656] TRACE perfrun.launcher <> - ENTER: void runtool::DirectoryMonitor::notifyAll()
+28426 [140446948902656] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+28428 [140446948902656] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+28429 [140446948902656] DEBUG perfrun.launcher <> - DirectoryInfo: total size of monitored paths is 35522 bytes
+28429 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DirectoryMonitor::notifyAll()
+28429 [140446948902656] TRACE perfrun.launcher <> - EXIT:  void runtool::DeadlineTimer::notify(const boost::system::error_code &)
+28683 [140447563794240] TRACE perfrun.launcher <> - EXIT:  int runtool::ProcessCreator::wait()
+28683 [140447563794240] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+28684 [140447563794240] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+28687 [140447563794240] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+28689 [140447452100352] TRACE perfrun.system <> - ENTER: void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+28689 [140447452100352] TRACE perfrun.system <> - EXIT:  void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+28689 [140447452100352] TRACE perfrun.system <> - ENTER: bool runtool::system::Controller::stop()
+28689 [140447452100352] TRACE perfrun.system <> - ENTER: bool runtool::system::ContainerMapping::stop()
+28689 [140447452100352] TRACE perfrun.system <> - EXIT:  bool runtool::system::ContainerMapping::stop()
+28752 [140447452100352] TRACE perfrun.system <> - EXIT:  bool runtool::system::Controller::stop()
+28753 [140447452100352] TRACE perfrun.itt <> - ENTER: bool runtool::itt::Controller::stop()
+28753 [140447452100352] INFO perfrun.itt <> - stop itt controller
+28753 [140447452100352] TRACE perfrun.itt <> - ENTER: bool runtool::itt::Controller::detach()
+28753 [140447452100352] INFO perfrun.itt <> - detach itt controller
+28753 [140447452100352] TRACE perfrun.itt <> - EXIT:  bool runtool::itt::Controller::detach()
+28753 [140447452100352] TRACE perfrun.itt <> - EXIT:  bool runtool::itt::Controller::stop()
+28753 [140447452100352] TRACE perfrun.tpss <> - ENTER: bool runtool::tpss::Controller::stop()
+28753 [140447452100352] INFO perfrun.tpss <> - stop tpss controller
+28756 [140447452100352] TRACE perfrun.tpss <> - EXIT:  bool runtool::tpss::Controller::stop()
+28756 [140447452100352] TRACE perfrun.media <> - ENTER: bool runtool::media::Controller::stop()
+28756 [140447452100352] TRACE perfrun.media <> - EXIT:  bool runtool::media::Controller::stop()
+28756 [140447452100352] ERROR perfrun.launcher <> - media can not perform an operation and will be disabled., at file: vcs/perfrun1/launcher/src/plugin_manager_impl.hpp:433
+28756 [140447452100352] TRACE perfrun.system <> - ENTER: void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+28756 [140447452100352] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::TraceFile::close(boost::system::error_code &)
+28757 [140447452100352] INFO perfrun.sdk <> - De-allocating TMU: /home/u17343031/FYArray/r000hs/data.0/systemcollector-245245-knl02.sc
+28757 [140447452100352] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::TraceFile::close(boost::system::error_code &)
+28757 [140447452100352] INFO perfrun.system <> - closed the system trace file: /home/u17343031/FYArray/r000hs/data.0/systemcollector-245245-knl02.sc
+28757 [140447452100352] TRACE perfrun.system <> - EXIT:  void runtool::system::Controller::onEvent(runtool::sdk::collection_state_t)
+28757 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::ProcessSetMonitor<T>::stop() [with T = unsigned int]
+28758 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::ProcessSetMonitor<T>::stop() [with T = unsigned int]
+28758 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::ProcessCreator::stop()
+28758 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::ProcessCreator::stop()
+28758 [140447563794240] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+28758 [140447563794240] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+28759 [140447563794240] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+28759 [140447563794240] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:201
+28759 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::Launcher::shutdownLaunch()
+28760 [140447563794240] TRACE perfrun.launcher <> - ENTER: Send RPC request
+28760 [140446974080768] TRACE perfrun.launcher <> - ENTER: Receive RPC request
+28760 [140447563794240] TRACE perfrun.launcher <> - header and body of the message was send: header = 22 serialization::archive 10 0 0 8 0 0 0 0; body = 22 serialization::archive 10 0 0 8 0 0 0 0
+28760 [140447563794240] TRACE perfrun.launcher <> - EXIT:  Send RPC request
+28760 [140446974080768] TRACE perfrun.launcher <> - header of the message was received: size = 8; message =       2a
+28761 [140446974080768] TRACE perfrun.launcher <> - body of the message was received: size = 42; message = 22 serialization::archive 10 0 0 8 0 0 0 0
+28761 [140446974080768] TRACE perfrun.launcher <> - EXIT:  Receive RPC request
+28761 [140446974080768] TRACE perfrun.launcher <> - EXIT:  RpcServer: the main loop handles RPC requests  from clients
+28762 [140447563794240] TRACE perfrun.sdk <> - ENTER: void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+28767 [140447563794240] TRACE perfrun.sdk <> - EXIT:  void runtool::sdk::getFilesFromDirectoryByExt(const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, std::list<std::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char>>>> &)
+28768 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::Launcher::shutdownLaunch()
+28768 [140447563794240] TRACE perfrun.launcher <> - EXIT:  int runtool::Launcher::doStart()
+28768 [140447563794240] TRACE perfrun.launcher <> - IMessenger: send collection state with state = 3
+28768 [140447563794240] INFO perfrun.launcher <> - Application exit code: 0
+28768 [140447563794240] INFO perfrun.launcher <> - Exit code: 0
+28769 [140447563794240] TRACE perfrun.launcher <> - EXIT:  Start the collection
+28769 [140447563794240] TRACE perfrun.launcher <> - ENTER: Destroy the launcher...
+28769 [140447563794240] TRACE perfrun.launcher <> - EXIT:  Destroy the launcher...
+28769 [140447563794240] TRACE perfrun.launcher <> - ENTER: runtool::ProcessCreator::~ProcessCreator()
+28769 [140447563794240] TRACE perfrun.launcher <> - ENTER: void runtool::ProcessCreator::stop()
+28769 [140447563794240] TRACE perfrun.launcher <> - EXIT:  void runtool::ProcessCreator::stop()
+28769 [140447563794240] TRACE perfrun.launcher <> - EXIT:  runtool::ProcessCreator::~ProcessCreator()
+28770 [140447563794240] TRACE perfrun.launcher <> - PluginManagerProxy::doOperation thread was terminated.
+28773 [140447563794240] TRACE perfrun.launcher <> - EXIT:  int main(int, char **)

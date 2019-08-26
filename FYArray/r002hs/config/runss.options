@@ -1,0 +1,14 @@
+-r
+/home/u17343031/FYArray/r002hs
+--stack-stitching
+--data-limit-mb=500
+--disk-space-limit=0
+--mrte-type=java,python
+--itt-config=frame
+--stackwalk=offline
+--mrte-mode=auto
+--type=cpu:counters:nostack
+--type=cpu:stack
+--interval=20
+--
+./FYArray.exe
